@@ -3,9 +3,18 @@
 <head>
 <title>Login Page</title>
 <style>
+  :root {
+    --main-font: Arial, sans-serif;
+    --main-bg-color: slateblue;
+    --form-bg-color: grey;
+    --form-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    --primary-color: #007bff;
+    --primary-color-hover: #0056b3;
+  }
+
   body {
-    font-family: Arial, sans-serif;
-    background-color:slateblue;
+    font-family: var(--main-font);
+    background-color: var(--main-bg-color);
     margin: 0;
     padding: 0;
     display: flex;
@@ -20,10 +29,10 @@
   }
 
   form {
-    background: grey;
+    background: var(--form-bg-color);
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--form-box-shadow);
     width: 300px;
   }
 
@@ -43,7 +52,7 @@
   }
 
   input[type="submit"] {
-    background-color: #007bff;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -52,7 +61,7 @@
   }
 
   input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: var(--primary-color-hover);
   }
 </style>
 </head>
